@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(189, 189, 189);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+} 
+/* Header*/
+header {
+    background-color: rgba(81, 82, 97, 0.849);
+    color: rgb(0, 0, 0);
+    align-content: center;
+}
+/*main*/
+main {
+    border: 5px solid black;
+}
+
+#blueberries {
+    text-align: center;
+}
+.lists {
+    background-color: rgb(37, 35, 35);
+    color: rgb(189, 189, 189);
+}
+
+a {
+    color: rgb(253, 148, 10);
+    background-color: rgb(7, 7, 7);
+}
