@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1>Final Project</h1>
+        </div>
+        <div id="menu" onclick="open_nav()">&#9776;Open</div>
+    </header>
+
+    <!-- menu -->
+    <div class="overlay" id="nav">
+
+        <a href="javascript:void(0)" class="close_button" onclick="close_nav()">&times;</a>
+
+        <div class="overlay_content">
+            <a href="index.html">Home</a>
+            <a href="Vm.html">Visual Media</a>
+            <a href="Layout.html">Responsive Layout</a>
+            <a href="Menu.html">Interactive Menu</a>
+        </div>
+    </div>
+
+    <main>
+        <article class="project">
+            <h2>Interactive Menu Project</h2>
+            <img src="images/Lab8.png" alt="Screenshot of interactive menu project" class="project_img">
+            
+            <section class="project_description">
+                <h3>About</h3>
+                <p>For this lab, I revised aone of my previous projects so it included an interactive navigation menu using HTML, CSS, and JavaScript. This was my first introduction to combining all three technologies.</p>
+            </section>
+
+            <section class="code-samples">
+                <h3>Implementation Example</h3>
+                <div class="code_tabs">
+                    <div class="tab">
+                        <h4>HTML Structure</h4>
+                        <code>&lt; div id="menu" onclick="open_nav()&gt;&lt;div&gt;
+                        </code>
+                    </div>
+                    <div class="tab">
+                        <h4>CSS Styling</h4>
+                        <code>.overlay { width: 100%; height: 0; position:fixed; background-color: rgba(43, 43, 46, 0.7); transition: 1s; z-index: 1; overflow-x: hidden; }
+                        </code>
+                    </div>
+                    <div class="tab">
+                        <h4>JavaScript</h4>
+                        <code>function open_nav(){ document.getElementById("nav").style.height= "100%"; }
+                        </code>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills_learned">
+                <h3>What I Learned</h3>
+                <ol>
+                    <li>Manipulation with JavaScript</li>
+                    <li>CSS transitions for smooth animations</li>
+                    <li>Accessibility ptions for interactive elements</li>
+                    <li>Debugging JavaScript in browser developer tools</li>
+                </ol>
+            </section>
+
+            <a href="index.html" class="button">Back to Home</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright.</p>
+    </footer>
+
+    <script src="final.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1>Final Project</h1>
+        </div>
+        <div id="menu" onclick="open_nav()">&#9776;Open</div>
+    </header>
+
+    <!-- menu -->
+    <div class="overlay" id="nav">
+
+        <a href="javascript:void(0)" class="close_button" onclick="close_nav()">&times;</a>
+
+        <div class="overlay_content">
+            <a href="index.html">Home</a>
+            <a href="Vm.html">Visual Media</a>
+            <a href="Layout.html">Responsive Layout</a>
+            <a href="Menu.html">Interactive Menu</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to My Finals Portfolio</h2>
+            <p>This portfolio showcases my most engaging projects from my CSIT121 class. Each project introduced me to more advanced concepts that kept me excited about learning.</p>
+        </section>
+
+        <section class="featured_projects">
+            <h2>Featured Projects</h2>
+            <div class="project_grid">
+                <article>
+                    <h3>Visual Media</h3>
+                    <p>Explored web graphic formats and CSS background images.</p>
+                    <a href="Vm.html" class="button">View Project</a>
+                </article>
+                <article>
+                    <h3>Responsive Layout</h3>
+                    <p>Created mobile first designs with flexbox and media queries.</p>
+                    <a href="Layout.html" class="button">View Project</a>
+                </article>
+                <article>
+                    <h3>Interactive Menu</h3>
+                    <p>Built a dynamic navigation with JavaScript.</p>
+                    <a href="Menu.html" class="button">View Project</a>
+                </article>
+            </div>
+        </section>
+
+        <aside class="resources">
+            <h3>Helpful Resources</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright.</p>
+    </footer>
+
+    <script src="final.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1>Final Project</h1>
+        </div>
+        <div id="menu" onclick="open_nav()">&#9776;Open</div>
+    </header>
+
+    <!-- menu -->
+    <div class="overlay" id="nav">
+
+        <a href="javascript:void(0)" class="close_button" onclick="close_nav()">&times;</a>
+
+        <div class="overlay_content">
+            <a href="index.html">Home</a>
+            <a href="Vm.html">Visual Media</a>
+            <a href="Layout.html">Responsive Layout</a>
+            <a href="Menu.html">Interactive Menu</a>
+        </div>
+    </div>
+
+    <main>
+        <article class="project">
+            <h2>Visual Media Project</h2>
+            <img src="images/Lab4.png" alt="Screenshot of Visual Media project" class="project_img">
+            
+            <section class="project_description">
+                <h3>About</h3>
+                <p>This lab assignment was all about adding visual elements to websites! I created a multipage website that showcases examples of common web graphic formats and uses CSS to include background and aesthetic images.</p>
+                
+                <table>
+                    <caption>Image Formats Explored</caption>
+                    <tr>
+                        <th>Format</th>
+                        <th>Best Use Case</th>
+                        <th>File Size</th>
+                    </tr>
+                    <tr>
+                        <td>JPEG</td>
+                        <td>Photographs</td>
+                        <td>Medium</td>
+                    </tr>
+                    <tr>
+                        <td>PNG</td>
+                        <td>Graphics with transparency</td>
+                        <td>Large</td>
+                    </tr>
+                    <tr>
+                        <td>SVG</td>
+                        <td>Logos & icons</td>
+                        <td>Small</td>
+                    </tr>
+                    <tr>
+                        <td>GIF</td>
+                        <td>Simple animations</td>
+                        <td>Varies</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="skills_learned">
+                <h3>Key Concepts Learned</h3>
+                <ol>
+                    <li>How to optimize images for web performance</li>
+                    <li>Using CSS background images effectively</li>
+                    <li>Creating image galleries with responsive design</li>
+                    <li>Implementing CSS filters and effects</li>
+                </ol>
+            </section>
+
+            <div class="image_gallery">
+                <h3>Project Examples</h3>
+                <div class="gallery_grid">
+                    <img src="images/memento.png" alt="Cover Image of Momento">
+                    <img src="images/rots.jpg" alt='Cover Image of Revenge of The Sith'>
+                    <img src="images/tokyodrift.gif" alt="GIF from scene in Tokyo Drift">
+                </div>
+            </div>
+
+            <a href="index.html" class="button">Back to Home</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright.</p>
+    </footer>
+
+    <script src="final.js"></script>
+</body>
+</html>

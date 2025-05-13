@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1>Final Project</h1>
+        </div>
+        <div id="menu" onclick="open_nav()">&#9776;Open</div>
+    </header>
+
+    <!-- menu -->
+    <div class="overlay" id="nav">
+
+        <a href="javascript:void(0)" class="close_button" onclick="close_nav()">&times;</a>
+
+        <div class="overlay_content">
+            <a href="index.html">Home</a>
+            <a href="Vm.html">Visual Media</a>
+            <a href="Layout.html">Responsive Layout</a>
+            <a href="Menu.html">Interactive Menu</a>
+        </div>
+    </div>
+
+    <main>
+        <article class="project">
+            <h2>Responsive Layout Project</h2>
+            <img src="images/Lab5.png" alt="Screenshot of layout project" class="project_img">
+            
+            <section class="project_description">
+                <h3>About</h3>
+                <p>In this lab, I modified a blog page to create a responsive design. I implemented a single-column layout for mobile devices and a multi-column layout for desktops using flexbox and media queries. Additionally, I added internal navigation using link anchors to allow users to jump to specific blog posts on the page.</p>
+                
+                <div class="layout-examples">
+                    <p>This Web Page is made with A Responsive Web Design, go ahead and try it yourself.</p>
+                </div>
+            </section>
+
+            <section class="breakpoints">
+                <h3>Breakpoints Strategy</h3>
+                <table>
+                    <tr>
+                        <th>Screen Width</th>
+                        <th>Layout Approach</th>
+                        <th>Techniques Used</th>
+                    </tr>
+                    <tr>
+                        <td>1200px and above</td>
+                        <td>3-column desktop layout</td>
+                        <td>CSS Grid</td>
+                    </tr>
+                    <tr>
+                        <td>768px-1199px</td>
+                        <td>2-column tablet layout</td>
+                        <td>Flexbox</td>
+                    </tr>
+                    <tr>
+                        <td>767px and below</td>
+                        <td>Single-column mobile layout</td>
+                        <td>Stacked blocks</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="skills_learned">
+                <h3>Lessons Learned</h3>
+                <ul>
+                    <li>Design for mobile first</li>
+                    <li>Flexbox for flexible component layouts</li>
+                    <li>CSS Grid for complex page layouts</li>
+                </ul>
+            </section>
+
+            <a href="index.html" class="button">Back to Home</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Web Design Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="final.js"></script>
+</body>
+</html>
